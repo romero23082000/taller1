@@ -1,0 +1,40 @@
+###
+POST http://localhost:3000/api/v1/people/person HTTP/1.1
+Content-Type: application/json
+
+{
+    "user_name": "Andres",
+    "lastname": "Romero",
+    "age": 75,
+    "email": "Afromero69883@umanizales.edu.co",
+    "proffession": "Desarrollador frontend",
+    "address_work":{
+        "code_zip": "170004",
+        "city_name": "Manizales",
+        "coordinates": [7236426, -2387355]
+    }
+}
+###
+GET http://localhost:3000/api/v1/people HTTP/1.1
+###
+GET http://localhost:3000/api/v1/people/632cfc738bbb05a5755b62db HTTP/1.1
+
+###
+PUT http://localhost:3000/api/v1/people/632cfc738bbb05a5755b62db HTTP/1.1
+Content-Type: application/json
+
+{
+    "user_name": "Jacinto",
+    "lastname": "Díaz Muñoz",
+    "age": 54,
+    "email": "jacinto123@hotmail.com",
+    "proffession": "Caza cuchas",
+    "address_work":{
+        "code_zip": "170004",
+        "city_name": "Manizales",
+        "coordinates": [7236426, -2387355]
+    }
+}
+
+###
+DELETE http://localhost:3000/api/v1/people/632cfc738bbb05a5755b62db HTTP/1.1
